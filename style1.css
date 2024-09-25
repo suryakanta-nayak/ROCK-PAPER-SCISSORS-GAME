@@ -21,7 +21,7 @@ body {
     border-top: 60px black solid;
     border-bottom: 60px black solid;
     border-radius: 36px;
-    background: white;
+    background-color:#fdf5df;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     position: relative;
 }
@@ -32,15 +32,21 @@ body {
     overflow: hidden;
     /* padding: 20px; */
     box-sizing: border-box;
+    position: relative;
 }
 
 h1 {
-    background-color: #081b31;
-    color:white;
+    background-color: #fecd45;
+    color:#2568fb;
     font-size: 1.5em;
-    height: 3rem;
-    line-height: 3rem;
+    height: 4rem;
+    line-height: 4rem;
     /* margin: 10px 0; */
+}
+.line{
+    height:5px;
+    width:100%;
+    background-color: #181251;
 }
 
 .choices {
@@ -61,11 +67,11 @@ h1 {
 
 .choice:hover{
     cursor: pointer;
-    background-color: #081b31;
+    background-color:  #ff0000;
 }
 .choice img {
-    width: 80px;
-    height: 80px;
+    width: 76px;
+    height: 76px;
     object-fit: cover;
     border-radius:50%;
 }
@@ -83,10 +89,37 @@ h1 {
 }
 
 #msg{
-    background-color: #081b31;
-    color: white;
+    background-color: #fecd45;
+    color: #2568fb;
     font-size: 1.5rem;
     display:inline;
     padding: 5px 10px;
     border-radius: 5px;
+}
+.choice-div{
+    margin: 20px 0;
+}
+.choices-display{
+    font-size:1.3rem;
+    font-weight: 600;
+}
+#user-choice{
+    color:green;
+    font-size:1.2rem;
+}
+#comp-choice{
+    color:red;
+    font-size:1.2rem;
+
+}
+.l2{
+    position:absolute;
+    bottom: 56px;
+}
+footer{
+    background-color: #5ac3b0;
+    padding: 10px 5px;
+    position: absolute;
+    font-weight: 500;
+    bottom: 0;
 }
