@@ -1,17 +1,18 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     text-align: center;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image:url("images/background.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;    
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mobile-frame {
@@ -21,7 +22,7 @@ body {
     border-top: 60px black solid;
     border-bottom: 60px black solid;
     border-radius: 36px;
-    background-color:#fdf5df;
+    background-color: #fdf5df;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     position: relative;
 }
@@ -37,15 +38,16 @@ body {
 
 h1 {
     background-color: #fecd45;
-    color:#2568fb;
+    color: #2568fb;
     font-size: 1.5em;
     height: 4rem;
     line-height: 4rem;
     /* margin: 10px 0; */
 }
-.line{
-    height:5px;
-    width:100%;
+
+.line {
+    height: 5px;
+    width: 100%;
     background-color: #181251;
 }
 
@@ -53,32 +55,33 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .choice {
-    height:85px;
-    width:85px;
+    height: 85px;
+    width: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
-.choice:hover{
+.choice:hover {
     cursor: pointer;
-    background-color:  #ff0000;
+    background-color: #ff0000;
 }
+
 .choice img {
     width: 76px;
     height: 76px;
     object-fit: cover;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 .score-board {
     display: flex;
-    gap:3rem;
+    gap: 3rem;
     font-size: 3rem;
     justify-content: center;
     margin: 30px 0;
@@ -88,35 +91,41 @@ h1 {
     margin: 30px 0;
 }
 
-#msg{
+#msg {
     background-color: #fecd45;
     color: #2568fb;
     font-size: 1.5rem;
-    display:inline;
+    display: inline;
     padding: 5px 10px;
     border-radius: 5px;
 }
-.choice-div{
+
+.choice-div {
     margin: 20px 0;
 }
-.choices-display{
-    font-size:1.3rem;
+
+.choices-display {
+    font-size: 1.3rem;
     font-weight: 600;
 }
-#user-choice{
-    color:green;
-    font-size:1.2rem;
+
+#user-choice {
+    color: green;
+    font-size: 1.2rem;
 }
-#comp-choice{
-    color:red;
-    font-size:1.2rem;
+
+#comp-choice {
+    color: red;
+    font-size: 1.2rem;
 
 }
-.l2{
-    position:absolute;
+
+.l2 {
+    position: absolute;
     bottom: 56px;
 }
-footer{
+
+footer {
     background-color: #5ac3b0;
     padding: 10px 5px;
     position: absolute;

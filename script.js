@@ -11,49 +11,49 @@ let userScoreCount = 0;
 let compScoreCount = 0;
 
 choices.forEach((choice) => {
-    choice.addEventListener("click",()=>{
+    choice.addEventListener("click", () => {
         const userChoice = choice.getAttribute("id");
         const compChoice = getCompChoice();
         const result = getResult(userChoice, compChoice);
 
         userChosse.textContent = userChoice;
         compChosse.textContent = compChoice;
-        
+
         showWinner(result);
     })
 });
 
-function showWinner(result){
-    if(result === "win"){
+function showWinner(result) {
+    if (result === "win") {
         userScoreCount++;
         userScore.textContent = userScoreCount;
         userScore.style.color = "green";
         msg.innerText = "You win.."
         msg.style.color = "green";
-    }else if(result === "lose"){
+    } else if (result === "lose") {
         compScoreCount++;
         compScore.textContent = compScoreCount
         compScore.style.color = "red";
         msg.innerText = "You lose.."
         msg.style.color = "red";
-    }else{
+    } else {
         msg.innerText = " It\'s draw.."
         msg.style.color = "#2568fb";
     }
 }
 
-const getCompChoice= ()=>{
+const getCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
 }
 
-function getResult(userChoice, compChoice){
-    if(userChoice === compChoice){
+function getResult(userChoice, compChoice) {
+    if (userChoice === compChoice) {
         return "draw";
-    }else if((userChoice === "rock" && compChoice === "scissors") || (userChoice === "paper" && compChoice === "rock") || (userChoice === "scissors" && compChoice === "paper")){
+    } else if ((userChoice === "rock" && compChoice === "scissors") || (userChoice === "paper" && compChoice === "rock") || (userChoice === "scissors" && compChoice === "paper")) {
         return "win";
-    }else{
+    } else {
         return "lose";
     }
 }
